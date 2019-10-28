@@ -79,7 +79,6 @@ import static spock.lang.Retry.Mode.SETUP_FEATURE_CLEANUP
  */
 @Category(PerformanceRegressionTest)
 @CleanupTestDirectory
-@Retry(condition = { PerformanceTestConditions.whenSlowerButNotAdhoc(failure) }, mode = SETUP_FEATURE_CLEANUP, count = 2)
 abstract class AbstractToolingApiCrossVersionPerformanceTest extends Specification {
     protected final static ReleasedVersionDistributions RELEASES = new ReleasedVersionDistributions()
     protected final static GradleDistribution CURRENT = new UnderDevelopmentGradleDistribution()

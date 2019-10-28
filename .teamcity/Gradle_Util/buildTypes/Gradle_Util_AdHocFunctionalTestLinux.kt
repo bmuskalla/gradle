@@ -5,14 +5,14 @@ import common.checkCleanM2
 import common.filterDefaultBranch
 import common.gradleWrapper
 import common.verifyTestFilesCleanup
+import configurations.killAllGradleProcessesLinux
 import jetbrains.buildServer.configs.kotlin.v2018_2.AbsoluteId
+import jetbrains.buildServer.configs.kotlin.v2018_2.BuildStep
 import jetbrains.buildServer.configs.kotlin.v2018_2.BuildType
 import jetbrains.buildServer.configs.kotlin.v2018_2.CheckoutMode
 import jetbrains.buildServer.configs.kotlin.v2018_2.FailureAction
 import jetbrains.buildServer.configs.kotlin.v2018_2.ParameterDisplay
-import jetbrains.buildServer.configs.kotlin.v2018_2.BuildStep
 import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.script
-import configurations.killAllGradleProcesses
 
 object Gradle_Util_AdHocFunctionalTestLinux : BuildType({
     uuid = "5d59fee9-be42-4f6d-9e0b-fe103e0d2765"
@@ -45,7 +45,7 @@ object Gradle_Util_AdHocFunctionalTestLinux : BuildType({
         script {
             name = "KILL_GRADLE_PROCESSES"
             executionMode = BuildStep.ExecutionMode.ALWAYS
-            scriptContent = killAllGradleProcesses
+            scriptContent = killAllGradleProcessesLinux
         }
         gradleWrapper {
             name = "GRADLE_RUNNER"

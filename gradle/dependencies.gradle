@@ -84,6 +84,7 @@ libraries.plist =               [coordinates: 'com.googlecode.plist:dd-plist', v
 libraries.pmaven_common =       [coordinates: 'org.sonatype.pmaven:pmaven-common', version: '0.8-20100325', license: "Apache 2.0"]
 libraries.pmaven_groovy =       [coordinates: 'org.sonatype.pmaven:pmaven-groovy', version: libraries.pmaven_common.version, license: "Apache 2.0"]
 libraries.rhino =               [coordinates: 'org.mozilla:rhino', version: '1.7.10', license: "Mozilla Public License 2.0"]
+libraries.scoped_properties =   [coordinates: 'io.github.bmuskalla:scoped-system-properties', version: '1.0.0', license: "Apache 2.0"]
 libraries.simple =              [coordinates: 'org.simpleframework:simple', version: '4.1.21', license: "Apache 2.0"]
 libraries.snakeyaml =           [coordinates: 'org.yaml:snakeyaml', version: '1.17', license: "Apache 2.0"]
 libraries.testng =              [coordinates: 'org.testng:testng', version: '6.3.1', because: 'later versions break test cross-version test filtering', license: "Apache 2.0"]

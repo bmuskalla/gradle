@@ -35,6 +35,7 @@ dependencies {
     implementation(library("guava"))
     implementation(library("inject"))
     implementation(library("ant"))
+    implementation(library("scoped_properties"))
 
     testImplementation(project(":fileCollections"))
     testImplementation(testFixtures(project(":core")))

@@ -1,4 +1,4 @@
-The Gradle team is excited to announce Gradle @version@.
+The Gradle team is excitedasdsd to announce Gradle @version@.
 
 This release features [1](), [2](), ... [n](), and more.
 
